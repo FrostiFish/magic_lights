@@ -3,6 +3,8 @@
 #include <FastLED.h>
 
 OOCSI oocsi = OOCSI();
+const String ssid  = "";
+const String password = "";
 
 const int ledPin = 22;
 const int numLeds = 10;
@@ -17,7 +19,7 @@ void processOOCSI() {
 }
 
 void setup() {
-  oocsi.connect("group1_lamps", "oocsi.id.tue.nl", "Habbo Hotel", "ABCikbengay69", processOOCSI);
+  oocsi.connect("group1_lamps", "oocsi.id.tue.nl", ssid, password, processOOCSI);
   Serial.begin(115200);
   Serial.println("subscribing to channel: group1_mirror");
   oocsi.subscribe("group1_mirror");
