@@ -8,4 +8,4 @@ It produces the following data
 
 | channel      | key | type | range | description |
 | ------------ | --- | ---- | ----- | ----------- |
-| magic_lights | lamp1 | int[3] | 0 - 255 | An array containing on lamp1[0] the hue, on lamp1[2] the saturation and on lamp1[3] the brightness |
+| magic_lights | lamp1 | int[3] | 0 - 255 | An array containing on lamp1[0] the hue, on lamp1[1] the saturation and on lamp1[2] the brightness |
